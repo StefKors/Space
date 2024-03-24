@@ -1,6 +1,15 @@
 import Foundation
 import CoreGraphics
 
+extension CGSize {
+    var midPoint: CGPoint {
+        CGPoint(
+            x: self.width/2 + CGFloat.random(in: -200...200),
+            y: self.height/2 + CGFloat.random(in: -200...200)
+        )
+    }
+}
+
 #if os(macOS)
 	public func NSStringFromCGSize(_ size: CGSize) -> String! {
 		return NSStringFromSize(size)

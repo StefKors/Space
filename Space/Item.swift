@@ -12,6 +12,7 @@ import SwiftData
 final class Item: Identifiable {
     var id: UUID = UUID()
     var timestamp: Date = Date.now
+    @Attribute(.unique) var url: URL
 
     private var x: CGFloat = 0
     private var y: CGFloat = 0
@@ -26,12 +27,13 @@ final class Item: Identifiable {
         }
     }
 
-    init(position: CGPoint = CanvasView.size.midPoint, timestamp: Date = Date.now) {
+    init(url: URL, position: CGPoint = CanvasView.size.midPoint, timestamp: Date = Date.now) {
+        self.url = url
         self.timestamp = timestamp
         self.position = position
     }
 }
 
 extension Item {
-    static let preview = Item(position: CGPoint(x: 2500, y: 2500))
+    static let preview = Item(url: URL(fileURLWithPath: ""), position: CGPoint(x: 2500, y: 2500))
 }

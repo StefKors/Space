@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A6A82432BB084F800ED94C5 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82412BB084F800ED94C5 /* EventMonitor.swift */; };
+		8A6A82442BB084F800ED94C5 /* MonitorEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82422BB084F800ED94C5 /* MonitorEvents.swift */; };
+		8A6A82462BB0869B00ED94C5 /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82452BB0869B00ED94C5 /* Clamp.swift */; };
+		8A6A82482BB08DAB00ED94C5 /* ZoomableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82472BB08DAB00ED94C5 /* ZoomableView.swift */; };
+		8A6A824A2BB08DD400ED94C5 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82492BB08DD400ED94C5 /* CanvasView.swift */; };
+		8A6A824C2BB08DEB00ED94C5 /* CanvasContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A824B2BB08DEB00ED94C5 /* CanvasContent.swift */; };
+		8A6A824E2BB08E4F00ED94C5 /* CanvasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A824D2BB08E4F00ED94C5 /* CanvasItemView.swift */; };
+		8A6A82502BB08E7D00ED94C5 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A824F2BB08E7D00ED94C5 /* DraggableView.swift */; };
+		8A6A82522BB08E9B00ED94C5 /* LayersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82512BB08E9B00ED94C5 /* LayersView.swift */; };
+		8A6A82542BB08ED000ED94C5 /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82532BB08ED000ED94C5 /* ListItemView.swift */; };
+		8A6A82562BB08EF600ED94C5 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A82552BB08EF600ED94C5 /* ControlsView.swift */; };
 		8A82DD672B358DCD00D4DDF0 /* SpaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82DD662B358DCD00D4DDF0 /* SpaceApp.swift */; };
 		8A82DD692B358DCD00D4DDF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82DD682B358DCD00D4DDF0 /* ContentView.swift */; };
 		8A82DD6B2B358DCD00D4DDF0 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82DD6A2B358DCD00D4DDF0 /* Item.swift */; };
@@ -16,9 +27,23 @@
 		8A82DD7A2B35A09600D4DDF0 /* CGPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82DD792B35A09600D4DDF0 /* CGPoint.swift */; };
 		8A82DD7C2B35A09A00D4DDF0 /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82DD7B2B35A09A00D4DDF0 /* CGRect.swift */; };
 		8A82DD7E2B35A18800D4DDF0 /* ContentMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A82DD7D2B35A18800D4DDF0 /* ContentMode.swift */; };
+		8AF85C5D2B8CDCB300FE0BB3 /* QuickLookCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF85C5C2B8CDCB300FE0BB3 /* QuickLookCanvasView.swift */; };
+		8AFD4D302B9F644A001F98F5 /* View+ConditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD4D2F2B9F644A001F98F5 /* View+ConditionalViewModifier.swift */; };
+		8AFD4D322B9F6453001F98F5 /* QLThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFD4D312B9F6453001F98F5 /* QLThumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A6A82412BB084F800ED94C5 /* EventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = "../../../Downloads/2cdcc441f936b4b0a7b331ccf13a78ac-6f4de86f91d30fd5944ef113c306bc78f405a7b5/EventMonitor.swift"; sourceTree = "<group>"; };
+		8A6A82422BB084F800ED94C5 /* MonitorEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonitorEvents.swift; path = "../../../Downloads/2cdcc441f936b4b0a7b331ccf13a78ac-6f4de86f91d30fd5944ef113c306bc78f405a7b5/MonitorEvents.swift"; sourceTree = "<group>"; };
+		8A6A82452BB0869B00ED94C5 /* Clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
+		8A6A82472BB08DAB00ED94C5 /* ZoomableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomableView.swift; sourceTree = "<group>"; };
+		8A6A82492BB08DD400ED94C5 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		8A6A824B2BB08DEB00ED94C5 /* CanvasContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasContent.swift; sourceTree = "<group>"; };
+		8A6A824D2BB08E4F00ED94C5 /* CanvasItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasItemView.swift; sourceTree = "<group>"; };
+		8A6A824F2BB08E7D00ED94C5 /* DraggableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		8A6A82512BB08E9B00ED94C5 /* LayersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayersView.swift; sourceTree = "<group>"; };
+		8A6A82532BB08ED000ED94C5 /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
+		8A6A82552BB08EF600ED94C5 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
 		8A82DD632B358DCD00D4DDF0 /* Space.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Space.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A82DD662B358DCD00D4DDF0 /* SpaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceApp.swift; sourceTree = "<group>"; };
 		8A82DD682B358DCD00D4DDF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,6 +55,9 @@
 		8A82DD792B35A09600D4DDF0 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		8A82DD7B2B35A09A00D4DDF0 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		8A82DD7D2B35A18800D4DDF0 /* ContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentMode.swift; sourceTree = "<group>"; };
+		8AF85C5C2B8CDCB300FE0BB3 /* QuickLookCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookCanvasView.swift; sourceTree = "<group>"; };
+		8AFD4D2F2B9F644A001F98F5 /* View+ConditionalViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ConditionalViewModifier.swift"; sourceTree = "<group>"; };
+		8AFD4D312B9F6453001F98F5 /* QLThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLThumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +90,29 @@
 		8A82DD652B358DCD00D4DDF0 /* Space */ = {
 			isa = PBXGroup;
 			children = (
-				8A82DD662B358DCD00D4DDF0 /* SpaceApp.swift */,
-				8A82DD772B35A09100D4DDF0 /* CGSize.swift */,
+				8A82DD712B358DCE00D4DDF0 /* Space.entitlements */,
+				8A6A824B2BB08DEB00ED94C5 /* CanvasContent.swift */,
+				8A6A824D2BB08E4F00ED94C5 /* CanvasItemView.swift */,
+				8A6A82492BB08DD400ED94C5 /* CanvasView.swift */,
 				8A82DD792B35A09600D4DDF0 /* CGPoint.swift */,
 				8A82DD7B2B35A09A00D4DDF0 /* CGRect.swift */,
+				8A82DD772B35A09100D4DDF0 /* CGSize.swift */,
+				8A6A82452BB0869B00ED94C5 /* Clamp.swift */,
 				8A82DD7D2B35A18800D4DDF0 /* ContentMode.swift */,
 				8A82DD682B358DCD00D4DDF0 /* ContentView.swift */,
+				8A6A82552BB08EF600ED94C5 /* ControlsView.swift */,
+				8A6A824F2BB08E7D00ED94C5 /* DraggableView.swift */,
+				8A6A82412BB084F800ED94C5 /* EventMonitor.swift */,
 				8A82DD6A2B358DCD00D4DDF0 /* Item.swift */,
+				8A6A82512BB08E9B00ED94C5 /* LayersView.swift */,
+				8A6A82532BB08ED000ED94C5 /* ListItemView.swift */,
+				8A6A82422BB084F800ED94C5 /* MonitorEvents.swift */,
+				8AFD4D312B9F6453001F98F5 /* QLThumbnail.swift */,
+				8AF85C5C2B8CDCB300FE0BB3 /* QuickLookCanvasView.swift */,
+				8A82DD662B358DCD00D4DDF0 /* SpaceApp.swift */,
+				8AFD4D2F2B9F644A001F98F5 /* View+ConditionalViewModifier.swift */,
+				8A6A82472BB08DAB00ED94C5 /* ZoomableView.swift */,
 				8A82DD6C2B358DCE00D4DDF0 /* Assets.xcassets */,
-				8A82DD712B358DCE00D4DDF0 /* Space.entitlements */,
 				8A82DD6E2B358DCE00D4DDF0 /* Preview Content */,
 			);
 			path = Space;
@@ -100,6 +142,8 @@
 			dependencies = (
 			);
 			name = Space;
+			packageProductDependencies = (
+			);
 			productName = Space;
 			productReference = 8A82DD632B358DCD00D4DDF0 /* Space.app */;
 			productType = "com.apple.product-type.application";
@@ -112,7 +156,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					8A82DD622B358DCD00D4DDF0 = {
 						CreatedOnToolsVersion = 15.2;
@@ -128,6 +172,8 @@
 				Base,
 			);
 			mainGroup = 8A82DD5A2B358DCD00D4DDF0;
+			packageReferences = (
+			);
 			productRefGroup = 8A82DD642B358DCD00D4DDF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,12 +201,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A82DD7E2B35A18800D4DDF0 /* ContentMode.swift in Sources */,
+				8AFD4D302B9F644A001F98F5 /* View+ConditionalViewModifier.swift in Sources */,
+				8A6A824A2BB08DD400ED94C5 /* CanvasView.swift in Sources */,
 				8A82DD782B35A09100D4DDF0 /* CGSize.swift in Sources */,
+				8A6A82442BB084F800ED94C5 /* MonitorEvents.swift in Sources */,
+				8A6A824C2BB08DEB00ED94C5 /* CanvasContent.swift in Sources */,
+				8A6A82432BB084F800ED94C5 /* EventMonitor.swift in Sources */,
+				8A6A82482BB08DAB00ED94C5 /* ZoomableView.swift in Sources */,
+				8A6A82562BB08EF600ED94C5 /* ControlsView.swift in Sources */,
+				8AFD4D322B9F6453001F98F5 /* QLThumbnail.swift in Sources */,
 				8A82DD7C2B35A09A00D4DDF0 /* CGRect.swift in Sources */,
 				8A82DD692B358DCD00D4DDF0 /* ContentView.swift in Sources */,
+				8A6A824E2BB08E4F00ED94C5 /* CanvasItemView.swift in Sources */,
+				8A6A82522BB08E9B00ED94C5 /* LayersView.swift in Sources */,
+				8A6A82502BB08E7D00ED94C5 /* DraggableView.swift in Sources */,
 				8A82DD6B2B358DCD00D4DDF0 /* Item.swift in Sources */,
+				8A6A82542BB08ED000ED94C5 /* ListItemView.swift in Sources */,
+				8AF85C5D2B8CDCB300FE0BB3 /* QuickLookCanvasView.swift in Sources */,
 				8A82DD7A2B35A09600D4DDF0 /* CGPoint.swift in Sources */,
 				8A82DD672B358DCD00D4DDF0 /* SpaceApp.swift in Sources */,
+				8A6A82462BB0869B00ED94C5 /* Clamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +261,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -264,6 +325,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -294,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Space/Preview Content\"";
 				DEVELOPMENT_TEAM = RT5BSWJB4U;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -322,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Space/Preview Content\"";
 				DEVELOPMENT_TEAM = RT5BSWJB4U;
 				ENABLE_HARDENED_RUNTIME = YES;
