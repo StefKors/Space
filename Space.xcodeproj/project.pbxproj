@@ -55,6 +55,7 @@
 		8A82DD792B35A09600D4DDF0 /* CGPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPoint.swift; sourceTree = "<group>"; };
 		8A82DD7B2B35A09A00D4DDF0 /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		8A82DD7D2B35A18800D4DDF0 /* ContentMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentMode.swift; sourceTree = "<group>"; };
+		8ABCB5B22BCD429800DE15F5 /* AppIconsvg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = AppIconsvg.svg; path = ../../../Downloads/SpaceAppIcon/AppIconsvg.svg; sourceTree = "<group>"; };
 		8AF85C5C2B8CDCB300FE0BB3 /* QuickLookCanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLookCanvasView.swift; sourceTree = "<group>"; };
 		8AFD4D2F2B9F644A001F98F5 /* View+ConditionalViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ConditionalViewModifier.swift"; sourceTree = "<group>"; };
 		8AFD4D312B9F6453001F98F5 /* QLThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QLThumbnail.swift; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 				8AFD4D2F2B9F644A001F98F5 /* View+ConditionalViewModifier.swift */,
 				8A6A82472BB08DAB00ED94C5 /* ZoomableView.swift */,
 				8A82DD6C2B358DCE00D4DDF0 /* Assets.xcassets */,
+				8ABCB5B22BCD429800DE15F5 /* AppIconsvg.svg */,
 				8A82DD6E2B358DCE00D4DDF0 /* Preview Content */,
 			);
 			path = Space;
