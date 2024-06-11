@@ -98,6 +98,7 @@ extension QLThumbnailGenerator {
                 case .icon:
                     fallthrough
                 case .lowQualityThumbnail:
+                    continuation.finish()
                     fallthrough
                 @unknown default:
                     break

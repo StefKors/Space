@@ -14,7 +14,7 @@ struct LayersView: View {
 
     @State private var files: [URL] = []
 
-    private let path = URL(fileURLWithPath: "/Users/stefkors/Downloads/demo", isDirectory: true)
+    private let path = URL(fileURLWithPath: "/Users/stefkors/Downloads/TestImages", isDirectory: true)
 
     var body: some View {
         List {
@@ -28,6 +28,13 @@ struct LayersView: View {
                 Button("Refresh Content") {
                     getAllInFolder()
                 }
+            }
+            ToolbarItem(placement: .destructiveAction) {
+                Button("Delete Content", systemImage: "trash", role: .destructive) {
+                    deleteAll()
+                }
+                .buttonStyle(.borderedProminent)
+                .foregroundStyle(.red)
             }
         })
         .navigationTitle(path.lastPathComponent)
@@ -48,6 +55,14 @@ struct LayersView: View {
         withAnimation {
             for index in offsets {
                 modelContext.delete(items[index])
+            }
+        }
+    }
+
+    private func deleteAll() {
+        withAnimation {
+            for item in items {
+                modelContext.delete(item)
             }
         }
     }
