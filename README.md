@@ -41,10 +41,12 @@
 -------
 
 
+<img alt="Screenshot of Space" src="Images/Screenshot-1.png">
+
+-------
+
+
 Built by [Stef Kors](https://stefkors.com)
 
 
 -------
-
-<img alt="Screenshot of Space" src="Images/Screenshot-1.png">
-
