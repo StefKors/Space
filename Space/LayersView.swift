@@ -19,9 +19,6 @@ struct LayersView: View {
 
     var body: some View {
         List {
-            Button("move window") {
-                print("triggered")
-            }
             ForEach(items) { item in
                 ListItemView(item: item)
             }

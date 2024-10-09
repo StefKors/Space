@@ -16,24 +16,24 @@ struct QuickLookCanvasView: NSViewRepresentable {
     @Binding var size: CGSize
 
     func makeNSView(context: Context) -> QLPreviewView {
-        let qlPreviewView = QLPreviewView(frame: .zero, style: .compact)!
+        let qlPreviewView = QLPreviewView(frame: CGRect(x: 0, y: 0, width: size.width, height: size.height), style: .compact)!
         
         qlPreviewView.previewItem = url as QLPreviewItem
-//        qlPreviewView.autostarts = true
+        qlPreviewView.autostarts = true
         return qlPreviewView
     }
 
     /// Update preview file when file changed
     func updateNSView(_ nsView: QLPreviewView, context: Context) {
 
-//        nsView.translatesAutoresizingMaskIntoConstraints = true
-//        nsView.subviews[0].autoresizesSubviews = true
-//        nsView.autoresizesSubviews = true
+        nsView.translatesAutoresizingMaskIntoConstraints = true
+        nsView.subviews[0].autoresizesSubviews = true
+        nsView.autoresizesSubviews = true
 
         DispatchQueue.main.async {
-            print(nsView.previewItem)
+//            print(nsView.previewItem)
 
-//            self.size = nsView.frame.size
+            self.size = nsView.frame.size
         }
 //        guard let currentPreviewItem = nsView.previewItem else {
 //            return

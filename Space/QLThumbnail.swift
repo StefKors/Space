@@ -27,7 +27,7 @@ struct QLThumbnail: View {
     /// This property represents the scale factor, or pixel density, of the device’s display as described in [Image Size and Resolution](https://developer.apple.com/design/human-interface-guidelines/images). For example, the value for a device with a `@2x` display is `2.0`.
     ///
     /// You can pass the initializer a screen scale that isn’t the current device’s screen scale. For example, you can create thumbnails for different scales, upload them to a server, and download them later on devices with a different screen scale.
-    var scale: CGFloat
+    var scale: CGFloat = NSScreen.main?.backingScaleFactor ?? 2
 
     /// The thumbnail sizes that you provide for a thumbnail request.
     ///
@@ -50,9 +50,10 @@ struct QLThumbnail: View {
                     .help("File: \(self.url.lastPathComponent), type: \(thumbnail.type)")
             } else {
                 ProgressView()
+                    .progressViewStyle(.linear)
             }
         }
-        .task {
+        .task(priority: .low) {
             do {
                 for try await thumb in QLThumbnailGenerator.shared.generateRepresentations(for: request) {
                     thumbnail = thumb
@@ -78,7 +79,7 @@ struct QLThumbnail: View {
         QLThumbnailGenerator.Request(fileAt: url,
                                      size: referenceSize,
                                      scale: scale,
-                                     representationTypes: representationTypes)
+                                     representationTypes: .thumbnail)
     }
 }
 
@@ -101,6 +102,8 @@ extension QLThumbnailGenerator {
                     continuation.finish()
                     fallthrough
                 @unknown default:
+                    print("fallthrough")
+                    continuation.finish()
                     break
                 }
             }

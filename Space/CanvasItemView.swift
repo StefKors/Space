@@ -20,8 +20,11 @@ struct CanvasItemView: View {
     @State private var previewUrl: URL?
 
     var body: some View {
-        QLThumbnail(url: item.url, size: $size, scale: 2.0, representationTypes: .all)
-            .padding(4)
+        QLThumbnail(url: item.url, size: $size, representationTypes: [.lowQualityThumbnail])
+            .allowsHitTesting(false)
+//        QLThumbnail(url: item.url, size: $size, scale: 2.0, representationTypes: .all)
+            .frame(width: size.width, height: size.height)
+            .padding()
             .background(.ultraThinMaterial, in: shape)
             .draggableView(item: item)
         //        VStack(alignment: .center) {
@@ -43,7 +46,7 @@ struct CanvasItemView: View {
         //                    Text("Preview")
         //                        .foregroundStyle(.tint)
         //                }
-        //            }
+        //            }#imageLiteral(resourceName: "Screenshot 2024-05-29 at 09.51.48.png")
         //        }
         //        .padding()
         //        .foregroundStyle(Color(nsColor: .windowBackgroundColor))
