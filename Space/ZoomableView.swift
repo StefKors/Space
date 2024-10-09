@@ -16,7 +16,7 @@ extension EnvironmentValues {
 
 private struct CanvasZoomLevelKey: EnvironmentKey {
     // 1
-    static let defaultValue: CGFloat = 1.0
+    static let defaultValue: CGFloat = 0.5
 
 }
 
@@ -24,7 +24,7 @@ struct ZoomableViewModifier: ViewModifier {
     @FocusState private var focused: Bool
     @GestureState var currentZoom: CGFloat = 0.0
     //    @G private var currentZoom = 0.0
-    @State private var totalZoom: CGFloat = 1.0
+    @State private var totalZoom: CGFloat = 0.5
 
     private let zoomStep: CGFloat = 0.25
     private let minZoom: CGFloat = 0.25

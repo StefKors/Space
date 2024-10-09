@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import AppKit
 
 struct LayersView: View {
     @Environment(\.modelContext) private var modelContext
@@ -18,6 +19,9 @@ struct LayersView: View {
 
     var body: some View {
         List {
+            Button("move window") {
+                print("triggered")
+            }
             ForEach(items) { item in
                 ListItemView(item: item)
             }
@@ -49,6 +53,7 @@ struct LayersView: View {
         .padding(.top, 20)
         .padding(.bottom, 20)
         .frame(width: 240)
+
     }
 
     private func deleteItems(offsets: IndexSet) {
